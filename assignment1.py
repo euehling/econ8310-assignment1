@@ -10,6 +10,7 @@ from pygam import LinearGAM, s
 df = pd.read_csv("assignment_data_train.csv")
 print(df.info())
 
+
 # timestamp to datetime
 df["Timestamp"] = pd.to_datetime(df["Timestamp"])
 df = df.sort_values(df.columns[0]).set_index(df.columns[0])
